@@ -1,0 +1,2 @@
+source /home/jeisson/SETR/LED_PWM/build/gdbinit/symbols
+source /home/jeisson/SETR/LED_PWM/build/gdbinit/connect

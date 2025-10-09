@@ -1,0 +1,2 @@
+source /home/jeisson/SETR/rgb_control/build/bootloader/gdbinit/symbols
+source /home/jeisson/SETR/rgb_control/build/bootloader/gdbinit/connect

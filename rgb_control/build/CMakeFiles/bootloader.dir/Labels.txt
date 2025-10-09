@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/jeisson/SETR/rgb_control/build/CMakeFiles/bootloader
+/home/jeisson/SETR/rgb_control/build/CMakeFiles/bootloader.rule
+/home/jeisson/SETR/rgb_control/build/CMakeFiles/bootloader-complete.rule
+/home/jeisson/SETR/rgb_control/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/jeisson/SETR/rgb_control/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/jeisson/SETR/rgb_control/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/jeisson/SETR/rgb_control/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/jeisson/SETR/rgb_control/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/jeisson/SETR/rgb_control/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/jeisson/SETR/rgb_control/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

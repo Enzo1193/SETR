@@ -1,0 +1,2 @@
+source /home/jeisson/SETR/LED_PWM/build/bootloader/gdbinit/symbols
+source /home/jeisson/SETR/LED_PWM/build/bootloader/gdbinit/connect

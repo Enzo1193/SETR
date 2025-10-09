@@ -1,0 +1,163 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background-color: #a569bd;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #a569bd;
+}
+
+#OTA, #WiFiConnect, #DHT22Sensor, .container, #PWM_FAN, #range_of_on {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#OTA label, #WiFiConnect label, #DHT22Sensor label, #PWM_FAN label, #range_of_on label{
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="button"], button {
+    background-color: #a569bd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover, button:hover {
+    background-color: #a569bd;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#file_info, #ota_update_status, #wifi_connect_status {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+section {
+    margin-bottom: 15px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.container {
+    text-align: center;
+}
+
+.container div {
+    display: inline-block;
+    margin: 10px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 40px 0;
+}
+
+#temperature_reading, #latest_firmware, #pwm_reading {
+    font-size: 1.5em;
+    color: #a569bd;
+    font-weight: bold;
+}
+
+/* Checkbox exclusive section */
+input[type="checkbox"].exclusive {
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+
+input[type="checkbox"].exclusive:checked {
+    background-color: #a569bd;
+    border-color: #a569bd;
+}
+
+#range_of_on span{
+
+    margin-left: 2em;
+    padding: 2em;
+    color:#a569bd;
+
+
+}
+
+.checkbox_range_temp{
+    margin-bottom: 1em;
+}
+label{
+    margin-right: 15px;
+    padding: 15px;
+}
+input[type="radio"]{
+    transform: scale(1.5); /* Ajusta el valor para hacer más grande el radio */
+    margin-right: 10px; /* Añade espacio entre el radio y la etiqueta */
+    border: #555 solid 1px;
+    width:max-content;
+    height:max-content;
+}
+input[type = "range"]{
+    margin-inline: 1em;
+}
+span{
+    inline-size:2em;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: column;
+    }
+
+    input[type="button"], button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

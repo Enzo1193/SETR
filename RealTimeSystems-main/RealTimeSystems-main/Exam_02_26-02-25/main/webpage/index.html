@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>ESP32 Udemy Course</title>
+    
+    <!-- External Resources -->
+    <link rel="stylesheet" href="app.css">
+    <script src="jquery-3.3.1.min.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>ESP32 Application Development</h1>
+</header>
+
+<main>
+    <!-- OTA Update Section -->
+    <section id="OTA" aria-labelledby="ota-heading">
+        <h2 id="ota-heading">ESP32 Firmware Update</h2>
+        <div>
+            <label for="latest_firmware">Latest Firmware:</label>
+            <div id="latest_firmware" aria-live="polite"></div> 
+        </div>
+        <input type="file" id="selected_file" accept=".bin" style="display: none;" onchange="getFileInfo()" aria-describedby="file_info" />
+        <div class="buttons">
+            <button type="button" onclick="document.getElementById('selected_file').click();">Select File</button>
+            <button type="button" onclick="updateFirmware()">Update Firmware</button>
+        </div>
+        <p id="file_info" aria-live="polite"></p>
+        <p id="ota_update_status" aria-live="polite"></p>
+    </section>
+
+    <!-- WiFi Connection Section -->
+    <section id="WiFiConnect" aria-labelledby="wifi-heading">
+        <h2 id="wifi-heading">ESP32 WiFi Connect</h2>
+        <form onsubmit="connectWiFi(); return false;">
+            <div>
+                <label for="connect_ssid">SSID</label>
+                <input id="connect_ssid" type="text" maxlength="32" placeholder="Enter SSID" required>
+            </div>
+            <div>
+                <label for="connect_pass">Password</label>
+                <input id="connect_pass" type="password" maxlength="64" placeholder="Enter Password" required>
+                <input type="checkbox" id="show_password" onclick="showPassword()"> 
+                <label for="show_password">Show Password</label>
+            </div>
+            <div class="buttons">
+                <button type="submit" id="connect_wifi">Connect</button>
+                <button type="button" onclick="toogle_led()">Toggle LED</button>
+            </div>
+        </form>
+        <div id="wifi_connect_credentials_errors" aria-live="polite"></div>
+        <p id="wifi_connect_status" aria-live="polite"></p>
+    </section>
+
+    <!-- Temperature Reading Section -->
+    <section id="DHT22Sensor" aria-labelledby="temperature-heading">
+        <h2 id="temperature-heading">Temperature Reading</h2>
+        <div>
+            <label for="temperature_reading">Temperature:</label>
+            <div id="temperature_reading" aria-live="polite"></div>
+        </div>
+    </section>
+    <section id="Potentiometer" aria-labelledby="temperature-heading" class="container">
+        <h2 id="temperature-heading">Potentiometer Reading</h2>
+        <div>
+            <label for="potenciometro_reading">potenciometro:</label>
+            <div id="potenciometro_reading" aria-live="polite"></div>
+        </div>
+    </section>
+     
+
+    <section id="range_of_on" aria-labelledby="range_heading">
+        <h2>intensity to ON</h2>
+        <div>
+            <label>
+                <input type="radio" name="colorRange" value="red" class="rangeCheckBox">🔴
+            </label>
+            <label>
+                <input type="radio" name="colorRange" value="green" class="rangeCheckBox">🟢
+            </label>
+            <label>
+                <input type="radio" name="colorRange" value="blue" class="rangeCheckBox">🔵
+            </label>
+        </div>
+        <label for="min_range"> intensity</label>
+        <input id="intensity_input" type="range" min="0" max="100" value="50" oninput="updateValueintesity(this.value)">
+        <span id="intensityValue">50</span>
+    
+        <div></div>
+        <button onclick="updateINTColor()">UPDATE</button>
+        <div></div>
+    </section>
+
+<section id="range_of_on" aria-labelledby="range_heading">
+    <h2>Range to ON</h2>
+    <div>
+        <label>
+            <input type="radio" name="colorRange" value="red" class="rangeCheckBox">🔴
+        </label>
+        <label>
+            <input type="radio" name="colorRange" value="green" class="rangeCheckBox">🟢
+        </label>
+        <label>
+            <input type="radio" name="colorRange" value="blue" class="rangeCheckBox">🔵
+        </label>
+    </div>
+    <label for="min_range">TIME OFF</label>
+    <input id="rangeUserMin" type="number" min="-55" max="150" value="25" oninput="updateValue(this.value)">
+    <span id="rangeValue">25</span>
+    <label for="max_range">TIME ON</label>
+    <input id="rangeUserMax" type="number" min="-55" max="150" value="50" oninput="updateValueMAX(this.value)">
+    <span id="rangeValueMAX">50</span>
+    <div></div>
+    <button onclick="updateRangeColor()">UPDATE</button>
+    <div></div>
+</section>
+
+
+</main>
+
+<footer>
+    <p>ESP32 Application © 2025 - Laura Daniela Alarcon</p>
+</footer>
+
+</body>
+</html>

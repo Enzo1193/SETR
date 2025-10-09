@@ -1,0 +1,2 @@
+source /home/jeisson/SETR/ledblink/build/bootloader/gdbinit/symbols
+source /home/jeisson/SETR/ledblink/build/bootloader/gdbinit/connect

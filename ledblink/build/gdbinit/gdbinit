@@ -1,0 +1,2 @@
+source /home/jeisson/SETR/ledblink/build/gdbinit/symbols
+source /home/jeisson/SETR/ledblink/build/gdbinit/connect
