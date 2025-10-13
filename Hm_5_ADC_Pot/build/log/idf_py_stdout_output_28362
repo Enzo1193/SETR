@@ -1,0 +1,145 @@
+Command: /home/jeisson/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/jeisson/esp/v5.5.1/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/jeisson/SETR/Hm_5_ADC_Pot/build/oneshot_read.elf /home/jeisson/SETR/Hm_5_ADC_Pot/build/bootloader/bootloader.elf -m '/home/jeisson/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/jeisson/esp/v5.5.1/esp-idf/tools/idf.py' '-p' '/dev/ttyUSB0'
+SH_SUPPORT_BOYA_CHIP` in menuconfig
+[0;32mI (258) spi_flash: detected chip: generic[0m
+[0;32mI (262) spi_flash: flash io: di�ets Jul 29 2019 12:21:46[0m
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 13 2025 12:53:18[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=083c8h ( 33736) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=000183f0 vaddr=3ffb0000 size=02208h (  8712) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=0001a600 vaddr=40080000 size=05a18h ( 23064) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11efch ( 73468) map[0m
+[0;32mI (140) esp_image: segment 4: paddr=00031f24 vaddr=40085a18 size=0716ch ( 29036) load[0m
+[0;32mI (152) esp_image: segment 5: paddr=00039098 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (158) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (158) boot: Disabling RNG early entropy source...[0m
+[0;32mI (170) cpu_start: Multicore app[0m
+[0;32mI (178) cpu_start: Pro cpu start cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (178) app_init: Application information:[0m
+[0;32mI (178) app_init: Project name:     oneshot_read[0m
+[0;32mI (183) app_init: App version:      f943a0c-dirty[0m
+[0;32mI (187) app_init: Compile time:     Oct 13 2025 12:53:00[0m
+[0;32mI (192) app_init: ELF file SHA256:  1df05e6b6...[0m
+[0;32mI (196) app_init: ESP-IDF:          v5.5.1-dirty[0m
+[0;32mI (201) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (205) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (209) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (213) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (219) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (224) heap_init: At 3FFB2A98 len 0002D568 (181 KiB): DRAM[0m
+[0;32mI (229) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (234) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (240) heap_init: At 4008CB84 len 0001347C (77 KiB): IRAM[0m
+[0;33mW (246) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (258) spi_flash: detected chip: generic[0m
+[0;32mI (262) spi_flash: flash io: dio[0m
+[0;33mW (265) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (278) main_task: Started on CPU0[0m
+[0;32mI (288) main_task: Calling app_main()[0m
+[0;32mI (288) ADC_POT: Calibración: Line Fitting[0m
+[0;32mI (288) ADC_POT: Calibración exitosa[0m
+[0;32mI (288) ADC_POT: Voltaje: 0.142 V[0m
+[0;32mI (3088) ADC_POT: Voltaje: 0.210 V[0m
+[0;32mI (3188) ADC_POT: Voltaje: 0.287 V[0m
+[0;32mI (3288) ADC_POT: Voltaje: 0.381 V[0m
+[0;32mI (3388) ADC_POT: Voltaje: 0.447 V[0m
+[0;32mI (3588) ADC_POT: Voltaje: 0.516 V[0m
+[0;32mI (3988) ADC_POT: Voltaje: 0.596 V[0m
+[0;32mI (4188) ADC_POT: Voltaje: 0.689 V[0m
+[0;32mI (4388) ADC_POT: Voltaje: 0.781 V[0m
+[0;32mI (4588) ADC_POT: Voltaje: 0.857 V[0m
+[0;32mI (4788) ADC_POT: Voltaje: 0.947 V[0m
+[0;32mI (4888) ADC_POT: Voltaje: 1.000 V[0m
+[0;32mI (5688) ADC_POT: Voltaje: 1.051 V[0m
+[0;32mI (5788) ADC_POT: Voltaje: 1.107 V[0m
+[0;32mI (5888) ADC_POT: Voltaje: 1.199 V[0m
+[0;32mI (5988) ADC_POT: Voltaje: 1.285 V[0m
+[0;32mI (6088) ADC_POT: Voltaje: 1.363 V[0m
+[0;32mI (6188) ADC_POT: Voltaje: 1.440 V[0m
+[0;32mI (6288) ADC_POT: Voltaje: 1.525 V[0m
+[0;32mI (6388) ADC_POT: Voltaje: 1.589 V[0m
+[0;32mI (6488) ADC_POT: Voltaje: 1.649 V[0m
+[0;32mI (6588) ADC_POT: Voltaje: 1.713 V[0m
+[0;32mI (6788) ADC_POT: Voltaje: 1.773 V[0m
+[0;32mI (7288) ADC_POT: Voltaje: 1.934 V[0m
+[0;32mI (7388) ADC_POT: Voltaje: 2.067 V[0m
+[0;32mI (7488) ADC_POT: Voltaje: 2.190 V[0m
+[0;32mI (7588) ADC_POT: Voltaje: 2.357 V[0m
+[0;32mI (7688) ADC_POT: Voltaje: 2.486 V[0m
+[0;32mI (7788) ADC_POT: Voltaje: 2.610 V[0m
+[0;32mI (7888) ADC_POT: Voltaje: 2.727 V[0m
+[0;32mI (7988) ADC_POT: Voltaje: 2.836 V[0m
+[0;32mI (8088) ADC_POT: Voltaje: 2.960 V[0m
+[0;32mI (8188) ADC_POT: Voltaje: 3.101 V[0m
+[0;32mI (10288) ADC_POT: Voltaje: 2.888 V[0m
+[0;32mI (10388) ADC_POT: Voltaje: 2.706 V[0m
+[0;32mI (10488) ADC_POT: Voltaje: 2.524 V[0m
+[0;32mI (10588) ADC_POT: Voltaje: 2.353 V[0m
+[0;32mI (10688) ADC_POT: Voltaje: 2.180 V[0m
+[0;32mI (10788) ADC_POT: Voltaje: 2.035 V[0m
+[0;32mI (10888) ADC_POT: Voltaje: 1.868 V[0m
+[0;32mI (10988) ADC_POT: Voltaje: 1.702 V[0m
+[0;32mI (11088) ADC_POT: Voltaje: 1.589 V[0m
+[0;32mI (11188) ADC_POT: Voltaje: 1.524 V[0m
+[0;32mI (11988) ADC_POT: Voltaje: 1.447 V[0m
+[0;32mI (12088) ADC_POT: Voltaje: 1.333 V[0m
+[0;32mI (12188) ADC_POT: Voltaje: 1.171 V[0m
+[0;32mI (12288) ADC_POT: Voltaje: 1.026 V[0m
+[0;32mI (12388) ADC_POT: Voltaje: 0.860 V[0m
+[0;32mI (12488) ADC_POT: Voltaje: 0.686 V[0m
+[0;32mI (12588) ADC_POT: Voltaje: 0.513 V[0m
+[0;32mI (12688) ADC_POT: Voltaje: 0.323 V[0m
+[0;32mI (12788) ADC_POT: Voltaje: 0.142 V[0m
+[0;32mI (13988) ADC_POT: Voltaje: 0.296 V[0m
+[0;32mI (14088) ADC_POT: Voltaje: 0.485 V[0m
+[0;32mI (14188) ADC_POT: Voltaje: 0.655 V[0m
+[0;32mI (14288) ADC_POT: Voltaje: 0.837 V[0m
+[0;32mI (14388) ADC_POT: Voltaje: 1.022 V[0m
+[0;32mI (14488) ADC_POT: Voltaje: 1.214 V[0m
+[0;32mI (14588) ADC_POT: Voltaje: 1.407 V[0m
+[0;32mI (14688) ADC_POT: Voltaje: 1.615 V[0m
+[0;32mI (14788) ADC_POT: Voltaje: 1.809 V[0m
+[0;32mI (14888) ADC_POT: Voltaje: 1.954 V[0m
+[0;32mI (14988) ADC_POT: Voltaje: 2.030 V[0m
+[0;32mI (15388) ADC_POT: Voltaje: 2.190 V[0m
+[0;32mI (15488) ADC_POT: Voltaje: 2.461 V[0m
+[0;32mI (15588) ADC_POT: Voltaje: 2.710 V[0m
+[0;32mI (15688) ADC_POT: Voltaje: 2.950 V[0m
+[0;32mI (15788) ADC_POT: Voltaje: 3.129 V[0m
+[0;32mI (16888) ADC_POT: Voltaje: 2.924 V[0m
+[0;32mI (16988) ADC_POT: Voltaje: 2.634 V[0m
+[0;32mI (17088) ADC_POT: Voltaje: 2.321 V[0m
+[0;32mI (17188) ADC_POT: Voltaje: 1.938 V[0m
+[0;32mI (17288) ADC_POT: Voltaje: 1.542 V[0m
+[0;32mI (17388) ADC_POT: Voltaje: 1.192 V[0m
+[0;32mI (17788) ADC_POT: Voltaje: 1.046 V[0m
+[0;32mI (17888) ADC_POT: Voltaje: 0.745 V[0m
+[0;32mI (17988) ADC_POT: Voltaje: 0.373 V[0m
+[0;32mI (18088) ADC_POT: Voltaje: 0.142 V[0m
+[0;32mI (18788) ADC_POT: Voltaje: 0.245 V[0m
+[0;32mI (18888) ADC_POT: Voltaje: 0.613 V[0m
+[0;32mI (18988) ADC_POT: Voltaje: 0.961 V[0m
+[0;32mI (19088) ADC_POT: Voltaje: 1.296 V[0m
+[0;32mI (19188) ADC_POT: Voltaje: 1.608 V[0m
+
