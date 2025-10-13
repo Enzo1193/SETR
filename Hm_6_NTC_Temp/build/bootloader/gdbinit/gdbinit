@@ -1,0 +1,2 @@
+source /home/jeisson/SETR/Hm_6_NTC_Temp/build/bootloader/gdbinit/symbols
+source /home/jeisson/SETR/Hm_6_NTC_Temp/build/bootloader/gdbinit/connect
