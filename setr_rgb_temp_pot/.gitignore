@@ -1,0 +1,10 @@
+# Ignorar archivos de compilación de ESP-IDF
+build/
+*.bin
+*.elf
+*.map
+*.log
+*.o
+*.a
+*.d
+.vscode/
